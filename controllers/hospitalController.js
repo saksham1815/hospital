@@ -1,7 +1,7 @@
 import Hospital from "../models/Hospital.js";
 
 export const getHospitalsNearLocation = async (req, res) => {
-    const { longitude, latitude, radius = 5 } = req.body;
+    const { longitude, latitude, radius } = req.body;
 
     // Validate the inputs
     if (!longitude || !latitude) {
