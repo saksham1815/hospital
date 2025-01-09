@@ -2,7 +2,7 @@ import Hospital from "../models/Hospital.js";
 
 export const getHospitalsNearLocation = async (req, res) => {
     const { longitude, latitude, radius } = req.body;
-
+    console.log(longitude , latitude);
     // Validate the inputs
     if (!longitude || !latitude) {
         return res.status(400).json({ message: "Longitude and latitude are required in the query parameters." });
