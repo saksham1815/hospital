@@ -6,6 +6,7 @@ import { connectDB } from "./config/connectDB.js";
 import hospitalRouter from "./routes/hospitalRoutes.js";
 
 const allowedOrigins = [
+    'https://medcare-orpin.vercel.app',
     'https://hospital-management-nine-wheat.vercel.app',
     'http://localhost:5173',
 ];
